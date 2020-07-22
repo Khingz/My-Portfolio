@@ -1,0 +1,113 @@
+@media (max-width: 900px) {
+    header {
+        nav {
+
+            div#nav-items {
+                display: none !important;
+            }
+
+            ul {
+                // display: none !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center !important;
+                background-color: black;
+                position: absolute;
+                right: 0;
+                top: 60%;
+                width: 100px;
+                height: 40vh;
+                text-align: center;
+                align-items: center !important;
+                padding-right: 2rem;
+                border-radius: 4%;
+                box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.07),
+                            inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+            }
+
+            ul li {
+                padding: 1rem 0 !important;
+            }
+
+            .ham-icon {
+                display: block !important;
+            }
+        }
+    }
+
+    #main {
+    
+        .avatar-container {
+            flex-direction: column !important;
+        }
+
+        .img {
+            height: 30vh !important;
+        }
+
+        .avatar-text {
+            text-align: center;
+        }
+    }  
+
+    #about {
+        flex-direction: column;
+        padding: 0 0 !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        .about-image img {
+            width: 80% !important;
+            padding: 0 !important;
+        }
+
+        .about-text-container {
+            padding: 0 .5rem !important;
+            width: 100% !important;
+            margin: 0 auto !important;
+        }
+
+        .about-text-container p {
+            width: 100% !important;
+        }
+    } 
+
+    #project {
+        .project-items {
+            flex-direction: column;
+        }
+
+        .project {
+            width: 100% !important;
+        }
+    } 
+
+    footer#contact {
+        .contact-container {
+            flex-direction: column;
+        }
+    }
+
+    form#contact-form {
+        .cancel-contact-container {
+            // right: 5% !important;
+        }
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    #scroll-down-container {
+        display: none;
+    }
+
+    #social-icon-container {
+        top: 15% !important;
+        a {
+            padding: .5rem 0;
+            font-size: .7rem !important;
+        }
+    }
+}

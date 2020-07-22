@@ -4,11 +4,7 @@
             "value": 100
         },
         "shape": {
-            "type": "circle",
-            "stroke": {
-              "width": 1,
-              "color": "#000000"
-            }
+            "type": "circle"
         },
         "opacity": {
             "value": 0.05,

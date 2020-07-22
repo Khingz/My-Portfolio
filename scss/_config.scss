@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+//fonts
+$header-font: 'Rowdies', cursive;
+$text-font: 'Roboto', sans-serif;
+$text-size: .9rem;
+$text-weight: 550;
+
+.hide {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     color: white;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: $text-font;
 }
 
 ul li{
@@ -11,4 +33,5 @@ ul li{
 ul li a {
     color: white;
     text-decoration: none;
+    transition: 2s ease all;
 }
