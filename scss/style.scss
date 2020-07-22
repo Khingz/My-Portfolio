@@ -198,7 +198,7 @@ header {
 
 //about section
 #about {
-    // width: 100%;
+    width: 100%;
     background-image: linear-gradient(to bottom, black, (lighten($color: #000, $amount: 10%)));
     display: flex;
     justify-content: space-between;
@@ -206,20 +206,16 @@ header {
     padding: 5rem 0;
 
     .about-image {
-        width: 80%;
+        width: 60%;
     }
 
     .about-image img {
-        width: 80%;
-        padding-left: 4rem;
-
+        width: 100%;
     }
 
     .about-text-container {
-        width: 100%;
-        padding-right: 2rem;
-        padding-left: 2rem;
-
+        width: 95%;
+        padding: 0 .5rem;
     }
 
     .about-text-container h3 {
@@ -255,7 +251,7 @@ header {
     .project {
         width: 80%;
         border: solid white 1px;
-        height: 40vh;
+        height: 18rem;
         margin: 0.5rem .5rem;
         text-align: center;
         cursor: pointer;
@@ -329,16 +325,6 @@ footer#contact {
     }
 }
 
-
-//contact me area
-// .contact-section {
-//     position: absolute;
-// }
-
-
-// .contact-section {
-//     display: none;
-// }
 form#contact-form {
     position: absolute;
     top: 50%;

@@ -53,7 +53,7 @@
 
     #about {
         flex-direction: column;
-        padding: 0 0 !important;
+        padding: 5rem 0 !important;
         justify-content: center !important;
         align-items: center !important;
 
@@ -64,7 +64,7 @@
 
         .about-text-container {
             padding: 0 .5rem !important;
-            width: 100% !important;
+            width: 95% !important;
             margin: 0 auto !important;
         }
 
@@ -84,6 +84,7 @@
     } 
 
     footer#contact {
+        // width: 95% !important;
         .contact-container {
             flex-direction: column;
         }
