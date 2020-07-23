@@ -1,34 +1,31 @@
 @media screen and (max-width: 900px) {
     header {
         nav {
+            ul.main-links {
+                background: rgba(0, 0, 0, .9);
+                box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.07),
+                            inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+                position: absolute !important;
+                right: -1px;
+                top: 7vh;
+                height: 40vh;
+                width: 45vw;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: space-around !important;
+                border-radius: 3%;
+                transform: translateX(109%);
+                transition: 1s ease !important;
 
-            div#nav-items {
-                display: none !important;
             }
 
-            // ul {
-            //     // display: none !important;
-            //     display: flex;
-            //     flex-direction: column;
-            //     justify-content: center !important;
-            //     background-color: black;
-            //     position: absolute;
-            //     right: 0;
-            //     top: 60%;
-            //     width: 100px;
-            //     height: 40vh;
-            //     text-align: center;
-            //     align-items: center !important;
-            //     padding-right: 2rem;
-            //     border-radius: 4%;
-            //     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.07),
-            //                 inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+            ul.main-links li {
+                opacity: 0;
+            }
 
-            // }
-
-            // ul li {
-            //     padding: 1rem 0 !important;
-            // }
+            .nav-active {
+                transform: translateX(1%) !important;
+            }
 
             .ham-icon {
                 display: block !important;
@@ -48,8 +45,22 @@
 
         .avatar-text {
             text-align: center;
+            margin-left: .5rem !important;
+            
         }
     }  
+
+    #avatar-buttons {
+        text-align: center !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        a {
+            display: block !important;
+            margin-bottom: 1rem !important;
+            width: 60% !important;
+        }
+    }
 
     #about {
         flex-direction: column;
@@ -100,6 +111,10 @@
 
 
 @media screen and (max-width: 800px) {
+
+    #main {
+        margin-top: 4rem;
+    }
     #scroll-down-container {
         display: none;
     }
@@ -110,5 +125,17 @@
             padding: .5rem 0;
             font-size: .7rem !important;
         }
+    }
+}
+
+
+// keyframe for burger nav
+@keyframes burger-nav {
+    from {
+        opacity: 0%
+    }
+
+    to {
+        opacity: 100%
     }
 }

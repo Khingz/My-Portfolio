@@ -32,14 +32,50 @@ const scrollFunction = () => {
 window.onscroll = scrollFunction
 
 //toggling hamburger menu
-// const toggleIcon = document.querySelector('#ham-icon');
-// toggleIcon.addEventListener('click', () => {
-//     const menuBox = document.querySelector('ul#ham-nav-items');
-//     if(menuBox.classList.contains('hide')) {
-//         menuBox.classList.remove('hide');
-//         toggleIcon.classList = 'fa fa-times';
-//     }else {
-//         menuBox.classList.add('hide');
-//         toggleIcon.classList = 'fa fa-align-right';
-//     }
-// })
+const nav = () => {
+    const hamIcon = document.querySelector('#ham-icon');
+    const linkUl = document.querySelector('.main-links');
+    const linkli = document.querySelectorAll('.main-links li')
+    hamIcon.addEventListener('click', () => {
+        linkUl.classList.toggle('nav-active');
+        if(linkUl.classList.contains('nav-active')) {
+            hamIcon.className = 'fa fa-times';
+        } else {
+            hamIcon.className = 'fa fa-align-right';
+        }
+
+        //animating the nav for mobile
+        linkli.forEach((linkanime, index) => {
+            if(linkanime.style.animation) {
+                linkanime.style.animation = ''
+            } else {
+                linkanime.style.animation = `burger-nav 1s forwards ${index/2}s`
+            }
+        })
+
+    })
+
+    //hide nav mobile view when a link is clicked
+    linkli.forEach(link => {
+        link.addEventListener('click', () => {
+            linkUl.classList.toggle('nav-active');
+
+             //animating the nav for mobile when link is clicked
+            linkli.forEach((linkanime, index) => {
+                if(linkanime.style.animation) {
+                    linkanime.style.animation = ''
+                } else {
+                    linkanime.style.animation = `burger-nav 1s forwards ${index/2}s`
+                }
+            })
+            //controls hamburger icon when monile view link is clicked
+            if(linkUl.classList.contains('nav-active')) {
+                hamIcon.className = 'fa fa-times';
+            } else {
+                hamIcon.className = 'fa fa-align-right';
+            }
+    
+        })
+    })
+}
+nav();

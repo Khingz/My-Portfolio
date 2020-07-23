@@ -34,7 +34,7 @@ header {
             width: 50%;
         }
         
-        ul#main-links {
+        ul.main-links {
             display: flex;
             justify-content: left;
             font-size: $text-size;
@@ -42,18 +42,19 @@ header {
             transition: 1s;
         }
 
-        ul#main-links li {
+        ul.main-links li {
             padding: 0 1rem;
             transition: 2s;
             cursor: pointer;
         }
 
-        ul#main-links li:hover {
+        ul.main-links li:hover {
             transform: scale(1.2);
         }
 
         .ham-icon {
             display: none;
+            transition: 2s ease all;
         }
     }
     
@@ -166,9 +167,11 @@ header {
 
 #avatar-buttons {
     margin-top: 2rem;
+    display: flex;
+    justify-content: left;
 
     a {
-        padding: .5rem 2rem;
+        padding: .5rem 1rem;
         background: none;
         border: solid white 1px;
         color: white;
@@ -377,7 +380,7 @@ form#contact-form {
         background: none;
         border: solid 1px white;
         padding: .5rem 3rem;
-        width: 80%;
+        width: 81%;
         color: white;
         margin-top: .5rem;
         cursor: pointer;
