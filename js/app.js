@@ -13,7 +13,7 @@ AOS.init({
 new hoverEffect({
     parent: document.querySelector('.img'),
     intensity: 0.2,
-    image1: '../assets/img/main-2.png',
+    image1: '../assets/img/check.png',
     image2: '../assets/img/hover-black.jpg',
     displacementImage: '../assets/img/trans.png',
     imagesRatio: 1
