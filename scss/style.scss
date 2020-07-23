@@ -34,7 +34,7 @@ header {
             width: 50%;
         }
         
-        ul {
+        ul#main-links {
             display: flex;
             justify-content: left;
             font-size: $text-size;
@@ -42,20 +42,19 @@ header {
             transition: 1s;
         }
 
-        ul li {
+        ul#main-links li {
             padding: 0 1rem;
             transition: 2s;
             cursor: pointer;
         }
 
-        ul li:hover {
+        ul#main-links li:hover {
             transform: scale(1.2);
         }
 
         .ham-icon {
             display: none;
         }
-
     }
     
 }
@@ -166,9 +165,9 @@ header {
 }
 
 #avatar-buttons {
-    margin-top: 1rem;
+    margin-top: 2rem;
 
-    button {
+    a {
         padding: .5rem 2rem;
         background: none;
         border: solid white 1px;
@@ -181,12 +180,13 @@ header {
         text-decoration: none;
         font-weight: 500;
         outline: none;
+        text-decoration: none;
         opacity: 0;
         animation: typing-button 2s 6s linear forwards;
         
     }
 
-    button:hover, a:hover {
+    a:hover {
         background: rgba(0, 0, 0, 0.8);
         border: solid rgba(255, 255, 255, 0.07) 2px;
         transform: scale(1.05);
@@ -332,7 +332,6 @@ form#contact-form {
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.9);
     width: 80%;
-    // height: 50%;
     text-align: center;
     box-shadow: inset -5px -5px 20px rgba(255, 255, 255, 0.07),
                 inset 5px 5px 15px rgba(145, 140, 140, 0.5);

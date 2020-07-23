@@ -1,4 +1,4 @@
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     header {
         nav {
 
@@ -6,29 +6,29 @@
                 display: none !important;
             }
 
-            ul {
-                // display: none !important;
-                display: flex;
-                flex-direction: column;
-                justify-content: center !important;
-                background-color: black;
-                position: absolute;
-                right: 0;
-                top: 60%;
-                width: 100px;
-                height: 40vh;
-                text-align: center;
-                align-items: center !important;
-                padding-right: 2rem;
-                border-radius: 4%;
-                box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.07),
-                            inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+            // ul {
+            //     // display: none !important;
+            //     display: flex;
+            //     flex-direction: column;
+            //     justify-content: center !important;
+            //     background-color: black;
+            //     position: absolute;
+            //     right: 0;
+            //     top: 60%;
+            //     width: 100px;
+            //     height: 40vh;
+            //     text-align: center;
+            //     align-items: center !important;
+            //     padding-right: 2rem;
+            //     border-radius: 4%;
+            //     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.07),
+            //                 inset 5px 5px 15px rgba(0, 0, 0, 0.5);
 
-            }
+            // }
 
-            ul li {
-                padding: 1rem 0 !important;
-            }
+            // ul li {
+            //     padding: 1rem 0 !important;
+            // }
 
             .ham-icon {
                 display: block !important;
@@ -99,7 +99,7 @@
 
 
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     #scroll-down-container {
         display: none;
     }
